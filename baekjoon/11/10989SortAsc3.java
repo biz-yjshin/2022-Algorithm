@@ -20,7 +20,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
  
-public class SortAsc3 { // SortAsc3
+class SortAsc3 { // SortAsc3
     public static void main(String[] args) throws IOException {
         // 수의 범위 (0 ~ 10000) 사실상 0은 제외
         int[] cnt = new int[10001];
