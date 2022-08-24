@@ -2,7 +2,7 @@
 
   날짜 : 2022.04.19
   난이도 : Easy
-  제목 : Remove Duplicates from Sorted Array
+  제목 : 26. Remove Duplicates from Sorted Array
   URL : https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 */

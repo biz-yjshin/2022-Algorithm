@@ -2,7 +2,7 @@
 
   날짜 : 2022.03.15
   난이도 : Easy
-  제목 : Longest Common Prefix
+  제목 : 14. Longest Common Prefix
   URL : https://leetcode.com/problems/longest-common-prefix/
 
  */

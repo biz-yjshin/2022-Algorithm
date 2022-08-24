@@ -2,7 +2,7 @@
 
   날짜 : 2022.03.11
   난이도 : Easy
-  제목 : Palindrome Number
+  제목 : 9. Palindrome Number
   URL : https://leetcode.com/problems/palindrome-number/
 
 */

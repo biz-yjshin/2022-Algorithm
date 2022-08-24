@@ -2,7 +2,7 @@
 
   날짜 : 2022.03.10
   난이도 : Easy
-  제목 : Two Sum
+  제목 : 1. Two Sum
   URL : https://leetcode.com/problems/two-sum/
 
  */

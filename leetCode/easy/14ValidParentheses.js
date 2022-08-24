@@ -2,8 +2,8 @@
 
  날짜 : 2022.03.16
  난이도 : Easy
- 제목 : Valid Parentheses
- URL : https://leetcode.com/problems/longest-common-prefix/
+ 제목 : 20. Valid Parentheses
+ URL : https://leetcode.com/problems/valid-parentheses/
 
  */
 

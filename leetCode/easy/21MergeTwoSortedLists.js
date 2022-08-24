@@ -1,4 +1,13 @@
 /**
+
+  날짜 : 2022.04.19 | 2022.08.19
+  난이도 : Easy
+  제목 : 21. Merge Two Sorted Lists
+  URL : https://leetcode.com/problems/merge-two-sorted-lists/
+
+*/
+
+/**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
  *     this.val = (val===undefined ? 0 : val)
@@ -10,7 +19,7 @@
  * @param {ListNode} list2
  * @return {ListNode}
  */
- var mergeTwoLists = function(list1, list2) {
+var mergeTwoLists = function(list1, list2) {
     if(list1.val == null && list2.val == null) {
         return null;
     } else if(list1.val == null) {
@@ -18,9 +27,9 @@
     } else if(list2.val == null) {
         return list1;
     }
-    
+
     let curList = new ListNode(undefined, undefined);
-  
+
     do {
         let nextList = new ListNode(undefined, undefined);
         if(list1.val < list2.val) {
@@ -36,4 +45,4 @@
     } while(list1.next == null && list2.next == null);
     curList.val = curList.next
     return curList;
-  };
+};
