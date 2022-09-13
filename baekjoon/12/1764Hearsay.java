@@ -1,6 +1,6 @@
 /**
  *  번호: 1764
- *  날짜: 2022.09.01
+ *  날짜: 2022.09.01 - 2022.09.08
  *  제목: 듣보잡
  *  링크: https://www.acmicpc.net/problem/1764
  * 
@@ -27,7 +27,6 @@ class HearSay { // HearSay
             nSet.add(br.readLine());
         }
 
-        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < m; i++) {
             String inputStr = br.readLine();
             if (nSet.contains(inputStr)) {
