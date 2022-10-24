@@ -1,6 +1,6 @@
 /**
- *  번호: 15650
- *  날짜: 2022.10.22
+ *  번호: 15652
+ *  날짜: 2022.10.25
  *  분류: 백트레킹
  *  제목: N과 M(4)
  *  링크: https://www.acmicpc.net/problem/15652
@@ -25,11 +25,10 @@ class NandM4 {
         
 		dfs(0);
 		System.out.print(sb);
- 
 	}
  
 	public static void dfs(int depth) {
-		// 깊이가 M이랑 같아지면 출력후 return
+		// 깊이가 M이랑 같아지면 출력 후 return
 		if (depth == M) {
 			for (int i = 0; i < M; i++) {
 				sb.append(arr[i] + " ");
@@ -39,9 +38,10 @@ class NandM4 {
 		}
  
 		for (int i = 1; i <= N; i++) {
-			arr[depth] = i;
-			dfs(depth + 1);
+			if(depth == 0 || arr[depth - 1] <= i) {
+				arr[depth] = i;
+				dfs(depth + 1);
+			}
 		}
-	}
- 
+	} 
 }
