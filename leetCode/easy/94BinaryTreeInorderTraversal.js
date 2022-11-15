@@ -19,6 +19,17 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
- var inorderTraversal = function(root) {
-    
+ var inorderTraversal = function (root) {
+  let output = [];
+  inorderDfs(root, output);
+  return output;
 };
+
+function inorderDfs(tree, output) {
+  if (tree === null) {
+    return;
+  }
+  inorderDfs(tree.left, output);
+  output.push(tree.val);
+  inorderDfs(tree.right, output);
+}
