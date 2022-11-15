@@ -13,15 +13,15 @@ class GreatestCommonFactorAndLeastCommonMultiple {
 	public static void main(String[] args) {
  
 		Scanner in = new Scanner(System.in);
-		
-		int a = in.nextInt();
-		int b = in.nextInt();
- 
-		int d = gcd(a, b);	// 최대공약수
- 
-		System.out.println(d);
-		System.out.println(a * b / d);
- 
+		int T = in.nextInt(); // T개
+	
+		for(int i = 0 ; i < T ; i++) {
+			int a = in.nextInt();
+			int b = in.nextInt();
+	 
+			int d = gcd(a, b);	// 최대공약수
+			System.out.println(a * b / d);
+		} 
 	}
  
 	// 최대공약수 반복문 방식
