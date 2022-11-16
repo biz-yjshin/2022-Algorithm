@@ -14,13 +14,13 @@ class Ring {
  
 		Scanner in = new Scanner(System.in);
 		int T = in.nextInt(); // T개
+		int a = in.nextInt();
 	
-		for(int i = 0 ; i < T ; i++) {
-			int a = in.nextInt();
+		for(int i = 0 ; i < T - 1 ; i++) {
 			int b = in.nextInt();
 	 
 			int d = gcd(a, b);	// 최대공약수
-			System.out.println(a * b / d);
+			System.out.println(a / d + "/" + b / d);
 		} 
 	}
  
