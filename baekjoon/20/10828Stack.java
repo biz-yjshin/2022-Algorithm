@@ -7,7 +7,7 @@
  */
 
 import java.util.Scanner;
-public class Stack {
+class Stack {
  
 	public static int[] stack;
 	public static int size = 0;
