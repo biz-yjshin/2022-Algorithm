@@ -23,20 +23,22 @@
  */
  var isBalanced = function (root) {
   let flag = true;
-  let dfs = getTreeDepth(root, 0);
-  console.log(dfs)
+
+  let getDepth = (tree, height) => {
+    if(!node) {
+      return 0;
+    }
+
+    let leftHeight = getDepth(tree.left, height + 1);
+    let rightHeight = getDepth(tree.right, height + 1);
+
+    if(Math.abs(rightHeight - leftHeight) > 1) {
+      flag = false;
+    }
+    return Math.max(leftHeight, rightHeight) + 1;
+  };
+
+  getDepth(tree, 0);
+
   return flag;
 };
-
-function getTreeDepth(tree, height) {
-  if(!tree) return 0;
-
-  let leftHeight = getTreeDepth(tree.left, height + 1);
-  let rightHeight = getTreeDepth(tree.right, height + 1);
-
-  if(Math.abs(rightHeight - leftHeight) > 1) {
-    return -1;
-  }
-
-  return Math.max(leftHeight, rightHeight) + 1;
-}
