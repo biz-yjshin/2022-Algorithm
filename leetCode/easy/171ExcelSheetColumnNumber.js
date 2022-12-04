@@ -12,5 +12,11 @@
  * @return {number}
  */
  var majorityElement = function(nums) {
-    
+  let sum = 0;
+  let exp = 0;
+  for(let i = columnTitle.length -1 ; i >= 0 ; i--){
+      let char = columnTitle.charCodeAt(i) - 64;
+      sum += char * Math.pow(26, exp++);
+  }
+  return sum; 
 };
